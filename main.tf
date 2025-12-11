@@ -160,7 +160,7 @@ systemctl enable nxserver.service || true
 systemctl start nxserver.service || true
 
 echo "Setting ubuntu password..."
-echo "ubuntu:<your_password_here>" | chpasswd
+echo "ubuntu:testpass123!" | chpasswd
 
 echo "Allowing firewall..."
 ufw allow 4000/tcp || true
